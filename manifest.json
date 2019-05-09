@@ -1,0 +1,16 @@
+{
+	"manifest_version": 2,
+	"name": "nMilos",
+	"version": "1.0",
+	"description": "Troque todas as imagens do site por fotos do Ricardo Milos.",
+	"icons": {
+    	"48": "icon48.jpg",
+        "128": "icon128.jpg"
+    },
+	"content_scripts": [
+	    {
+	      "matches": ["*://*/*"],
+	      "js": ["jquery.js", "nMilos.js"]
+	    }
+  	]
+}
